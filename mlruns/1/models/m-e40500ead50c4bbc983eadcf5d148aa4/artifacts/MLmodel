@@ -1,0 +1,23 @@
+artifact_path: /content/unmsm_research_methods_assignment/mlruns/1/models/m-e40500ead50c4bbc983eadcf5d148aa4/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.12.13
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.6.1
+    skops_trusted_types: null
+mlflow_version: 3.14.0
+model_id: m-e40500ead50c4bbc983eadcf5d148aa4
+model_size_bytes: 10623
+model_uuid: m-e40500ead50c4bbc983eadcf5d148aa4
+prompts: null
+run_id: 84dd9823b1f047fe919b21be81d240c0
+utc_time_created: '2026-06-28 12:59:24.467469'
