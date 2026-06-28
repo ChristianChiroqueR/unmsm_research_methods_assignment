@@ -1,4 +1,4 @@
 [core]
     remote = storage
 ['remote "storage"']
-    url = /content/drive/MyDrive/dvc_storage_unmsm
+    url = /content/drive/MyDrive/2. Capstone_project/dvc_storage_unmsm
