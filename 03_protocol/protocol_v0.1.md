@@ -1,7 +1,5 @@
 # Protocol v0.1
 
-**Assignment:** Protocol v0.1  
-
 **Student:** Christian Chiroque Ruiz  
 
 **Instructor:** Dr. Loveleen Gaur  
