@@ -88,3 +88,20 @@ Contingency. In the event of local hardware failure, the full research environme
 | **After retention period** | Code and artifacts remain on Zenodo — the DOI is permanent. No active deletion is required as no personal data is involved. |
 | **Why no deletion is required** | Ley 29733 mandates deletion upon expiry of purpose only for personal data. As no personal data exists in any artifact produced by this research, there is no legal obligation to delete. |
 | **Exception** | If future work incorporates real financial intelligence unit (UIF) data, a separate secure deletion plan will be defined at that time. |
+
+## Legal Compliance Checklist (12 points)
+
+| # | Question | Answer | Justification |
+|---|---|---|---|
+| 1 | Do the data contain information about identified or identifiable natural persons? | N/A — documented | The Elliptic dataset contains no names, addresses, or direct or indirect identifiers of natural persons. All entities were anonymized by Elliptic at source. |
+| 2 | Is a legal basis required under Ley 29733 for data processing? | N/A — documented | Ley 29733 applies exclusively to personal data. As no personal data exists, no legal basis is required. |
+| 3 | Is informed consent required from data subjects? | N/A — documented | There are no data subjects. The dataset is publicly available and anonymized at source. |
+| 4 | Is the purpose of data use defined and documented? | Yes | The purpose is exclusively academic: to validate a GML framework for AML detection. Documented in the research protocol. |
+| 5 | Is data use compatible with the declared purpose? | Yes | The dataset is used solely to train and evaluate the GNN model described in the thesis. No secondary use. |
+| 6 | Are security measures documented? | Yes | 3-2-1 rule: local laptop + GitHub + Google Drive via DVC. HTTPS on all operations. Documented in DMP Section 4. |
+| 7 | Can ARCO rights be fulfilled if exercised by a data subject? | N/A — documented | No identifiable data subjects exist. ARCO rights are not exercisable over anonymous data. |
+| 8 | Does GDPR apply due to data subjects located in the EU? | N/A — documented | No data subjects exist in any jurisdiction. The entities behind the transactions were anonymized prior to dataset publication. |
+| 9 | Is there an international transfer of personal data? | N/A — documented | Storage on Google Drive (USA) does not constitute an international transfer of personal data, as no personal data exists. Transfer rules under Ley 29733 and GDPR are not triggered. |
+| 10 | Is notification to the ANPD required in the event of a data breach? | N/A — documented | The 48-hour notification obligation under DS 016-2024-JUS applies only to personal data. Without personal data, there is no obligation. |
+| 11 | Is a Data Protection Officer (DPO) required? | N/A — documented | A DPO is mandatory for large-scale processing of sensitive data. This condition does not apply to this research. |
+| 12 | Are retention and deletion dates defined? | Yes | 5 years post-defense. No active deletion required due to the absence of personal data. Documented in DMP Section 7. |
