@@ -36,3 +36,55 @@ Utility-privacy trade-off statement. No utility was sacrificed in the anonymizat
 
 ## 4. Storage & backup
 
+Storage infrastructure. The research dataset, code, and derived artifacts are maintained across three storage locations following the 3-2-1 backup principle: one local copy on the researcher's personal workstation, one copy in a private GitHub repository (ChristianChiroqueR/unmsm_research_methods_assignment), and one remote copy in Google Drive managed via DVC (Data Version Control). This configuration ensures three independent copies across two distinct media types, with at least one offsite location.
+
+Data versioning. Dataset versions are tracked using DVC, with Google Drive as the remote storage backend. Code versions are tracked via Git. MLflow logs all experiment runs, including model hyperparameters, training metrics, and artifact paths, providing a complete and reproducible record of every experimental configuration evaluated during the research.
+
+Access control. The GitHub repository is currently private and accessible only to the researcher and designated thesis supervisors. It will be made public upon thesis submission. Google Drive storage is restricted to the researcher's institutional account. No third parties have access to stored data or model artifacts during the research period.
+
+Encryption and security. Data in transit is protected via HTTPS for all GitHub and Google Drive operations. Local copies are protected by the operating system's user authentication. No additional encryption layer is applied, which is acceptable given that the dataset contains no personal data and carries no confidentiality obligations under Ley 29733 or GDPR.
+
+Contingency. In the event of local hardware failure, the full research environment is recoverable from GitHub (code and configuration) and Google Drive via DVC (dataset). The Docker container defined in the repository ensures that the computational environment is reproducible independently of the local machine.
+
+## 5. Legal Compliance
+
+| Element | Detail |
+|---|---|
+| **Primary framework** | Ley 29733 — Ley de Protección de Datos Personales (Peru) |
+| **Current regulation** | DS 016-2024-JUS — in force since 30 March 2025 |
+| **Does Ley 29733 apply?** | No — the dataset contains no personal data of identified or identifiable natural persons |
+| **Legal basis** | Art. 2: the law applies to data of identified or identifiable natural persons. Elliptic anonymized the dataset at source — no node is attributable to any person. |
+| **Does GDPR apply?** | No — there are no data subjects located in the EU in the dataset |
+| **GDPR argument** | The entities behind the transactions were anonymized by Elliptic prior to publication. No identifiable subject exists under European jurisdiction. |
+| **Breach notification (48h)?** | Not applicable — without personal data, there is no notification obligation to the ANPD |
+| **DPO required?** | Not applicable — no large-scale processing of sensitive data |
+| **Consent required?** | Not applicable — publicly available data, anonymized at source, no natural persons involved |
+| **International transfer** | The dataset is partially stored in Google Drive (USA). Without personal data, international transfer rules are not triggered. |
+| **Conclusion** | This research operates outside the scope of both frameworks. This determination is based on the nature of the data, not the researcher's jurisdiction. |
+
+## 6. Sharing Plan
+
+| Element | Detail |
+|---|---|
+| **What is shared** | Source code · trained model weights · MLflow experiment logs · aggregated performance metrics · dataset summary statistics |
+| **What is NOT shared** | The original dataset — not necessary, already publicly available on Kaggle |
+| **Where** | GitHub (`ChristianChiroqueR/unmsm_research_methods_assignment`) + Zenodo (permanent DOI upon thesis submission) |
+| **When** | GitHub made public at the time of thesis defense · Zenodo deposit at the time of publication |
+| **License** | CC-BY-4.0 for all artifacts produced in this thesis |
+| **Access conditions** | Unrestricted — open access, no registration required, no embargo |
+| **Format** | Code in Python · model weights in native PyTorch format (`.pt`) · metrics in CSV · experiment logs in MLflow tracking format |
+| **Documentation** | README with reproduction instructions · `requirements.txt` with pinned library versions · Docker container for full environment reproducibility |
+| **Citation** | Zenodo automatically generates a citable DOI — to be included in the thesis and any derived publications |
+
+## 7. Retention 
+
+| Element | Detail |
+|---|---|
+| **Retention period** | 5 years after thesis defense |
+| **What is retained** | Source code · trained model weights · MLflow experiment logs · aggregated metrics · dataset summary statistics |
+| **What is not retained** | The original dataset is not applicable — it is public and permanently available on Kaggle |
+| **Storage during retention** | GitHub + Zenodo (both permanent by design) |
+| **Responsible party** | Principal researcher (Christian Chiroques) |
+| **After retention period** | Code and artifacts remain on Zenodo — the DOI is permanent. No active deletion is required as no personal data is involved. |
+| **Why no deletion is required** | Ley 29733 mandates deletion upon expiry of purpose only for personal data. As no personal data exists in any artifact produced by this research, there is no legal obligation to delete. |
+| **Exception** | If future work incorporates real financial intelligence unit (UIF) data, a separate secure deletion plan will be defined at that time. |
