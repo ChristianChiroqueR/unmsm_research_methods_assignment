@@ -56,9 +56,9 @@ AND
 
 | Phase | n |
 |---|---|
-| Records identified (Semantic Scholar) | 73 |
-| Duplicates removed | 0 |
-| Records screened (title + abstract) | 73 |
+| Records identified (Semantic Scholar) | 427 |
+| Duplicates removed | 122 |
+| Records screened (title + abstract) | 305 |
 | Excluded at title/abstract | 43 |
 | -- Off topic (No ML/GNN method used) | 21 |
 | Full-text assessed for eligibility | 40 |
